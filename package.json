@@ -1,0 +1,23 @@
+{
+    "name": "elstool-electron",
+    "version": "1.0.0",
+    "description": "艾尔工具箱桌面版",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MonKokoro/elstool-electron.git"
+    },
+    "author": "MonShin",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MonKokoro/elstool-electron/issues"
+    },
+    "homepage": "https://github.com/MonKokoro/elstool-electron#readme",
+    "devDependencies": {
+        "electron": "^29.0.0"
+    }
+}

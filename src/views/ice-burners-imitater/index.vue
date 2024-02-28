@@ -13,17 +13,7 @@
         <TotalResult /> -->
         <div class="ice-burner">
             <div class="ice-burner-header">
-                <router-link :to="{name: 'home'}">
-                    <el-tooltip
-                        class="item"
-                        content="返回首页"
-                        placement="bottom"
-                        :enterable="false"
-                    >
-                        <el-icon class="ice-burner-set-icon" :size="50" color="#ccc"><back /></el-icon>
-                    </el-tooltip>
-                </router-link>
-                <el-icon class="ice-burner-set-icon" :size="50" color="#ccc">
+                <!-- <el-icon class="ice-burner-set-icon" :size="50" color="#ccc">
                     <el-tooltip
                         class="item"
                         content="详细信息"
@@ -32,13 +22,13 @@
                     >
                         <warning @click="informationShow = true"/>
                     </el-tooltip>
-                </el-icon>
+                </el-icon> -->
             </div>
             <div class="ice-burner-center">
-                <div class="ice-burner-img">
+                <!-- <div class="ice-burner-img">
                     <div class="img-burner"><img src="@/assets/ice-burner.png" /></div>
                     <div class="img-key"><img src="@/assets/ice-sculpture-key.png" /></div>
-                </div>
+                </div> -->
                 <div class="ice-burner-button">
                     <el-button size="large" type="success" @click="gacha(1)">抽1次</el-button>
                     <el-button size="large" type="success" @click="gacha(10)">抽10次</el-button>
@@ -50,11 +40,11 @@
 
 <script setup>
 import { ref } from 'vue';
-import { Back, Warning } from '@element-plus/icons-vue'
-import Information from "./information.vue"
-import Result from "./result.vue"
-import TotalResult from "./total-result.vue"
-import axios from '@/axios';
+// import { Back, Warning } from '@element-plus/icons-vue'
+// import Information from "./information.vue"
+// import Result from "./result.vue"
+// import TotalResult from "./total-result.vue"
+// import axios from '@/axios';
 
 let informationShow = ref(false)
 let informationData = ref()
@@ -89,7 +79,7 @@ getItems()
     top: 0;
     right: 0;
     background: white;
-    background-image: url('@/assets/aurora-mystica.png');
+    // background-image: url('@/assets/aurora-mystica.png');
     background-position: top right;
     background-size: auto 100%;
     background-repeat: no-repeat;

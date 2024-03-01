@@ -14,6 +14,12 @@ const createWindow = () => {
         minWidth: 800,
         minHeight: 600,
         // icon: path.join(__dirname, './preload.ico'),
+        // titleBarStyle: 'hidden',
+        // titleBarOverlay: {
+        //     color: 'rgba(0,0,0,0)',
+        //     height: 35,
+        //     symbolColor: 'white'
+        // },
         webPreferences: {
             nodeIntegration: true,
             preload: path.join(__dirname, './preload.js')

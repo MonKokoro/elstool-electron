@@ -14,7 +14,6 @@ let result = ref([])
 watch(
     () => props.show,
     (newValue) => {
-        console.log(newValue, props)
         if(newValue == true){
             getResult(props.data)
         }
@@ -104,9 +103,11 @@ function handleClose(){
         width: 100%;
         height: calc(100% - 92px);
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
         .result-single{
             width: 90%;
             height: 90px;
@@ -172,11 +173,6 @@ function handleClose(){
         height: 32px;
         margin: 8px 0;
         text-align: center;
-    }
-}
-@media (min-width: 800px){
-    .result-complex{
-        grid-template-columns: repeat(2, auto);
     }
 }
 </style>

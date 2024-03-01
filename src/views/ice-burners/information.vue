@@ -16,9 +16,9 @@ function getLight(item){
     if(item.highLight){
         return 'high-light'
     }
-    else if(item.midLight){
-        return 'mid-light'
-    }
+    // else if(item.midLight){
+    //     return 'mid-light'
+    // }
     else{
         return ''
     }
@@ -63,9 +63,6 @@ function getLight(item){
     text-align: left;
     .high-light{
         color: red
-    }
-    .mid-light{
-        color: blue
     }
 }
 </style>

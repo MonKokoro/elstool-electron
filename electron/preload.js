@@ -11,15 +11,12 @@ contextBridge.exposeInMainWorld('versions', {
             const data = fs.readFileSync('package.json', 'utf8')
             const jsonData = JSON.parse(data)
 
-            console.log('当前项目版本号：' + jsonData.version)
             return jsonData.version
         } catch (err) {
-            console.error('无法读取 package.json 文件：', err)
+            console.error('无法读取项目版本号', err)
             return
         }
     },
     ping: () => ipcRenderer.invoke('ping')
     // 除函数之外，我们也可以暴露变量
 })
-
-// contextBridge.exposeInIsolatedWorld('fs', fs)

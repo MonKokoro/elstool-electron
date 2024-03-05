@@ -12,6 +12,7 @@ const elstoolVersion = versions.elstool()
             <RouterLink to="/">首页</RouterLink>
             <RouterLink to="/about">About</RouterLink>
             <RouterLink to="/ice-burners">挫冰模拟器</RouterLink>
+            <RouterLink to="/upgrade">强化模拟器</RouterLink>
         </div>
         <div class="content">
             <div class="view-box">

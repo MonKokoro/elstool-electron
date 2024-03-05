@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Home from '../views/home/index.vue'
 import IceBurners from '../views/ice-burners/index.vue'
+import Upgrade from '../views/upgrade/index.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +24,11 @@ const router = createRouter({
             path: '/ice-burners',
             name: 'ice-burners',
             component: IceBurners
+        },
+        {
+            path: '/upgrade',
+            name: 'upgrade',
+            component: Upgrade
         }
     ]
 })
